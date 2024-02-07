@@ -6,13 +6,79 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:background="#EEF5FF"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/logoUFG"
+            android:layout_width="wrap_content"
+            android:layout_height="157dp"
+            app:srcCompat="@drawable/ufglogocorporativvohorizontal"></ImageView>
+
+        <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="104dp"
+                android:layout_height="101dp"
+                android:id="@+id/photoAngie"
+                app:srcCompat="@drawable/angieespinoza">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bioName"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="0dp"
+                android:text="Angie Espinoza ⛄"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="start|top"
+                android:inputType="text|textMultiLine"
+                android:maxEms="15"
+                android:maxLines="15"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="50dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="start|top"
+                android:inputType="text|textMultiLine"
+                android:maxEms="15"
+                android:maxLines="15"
+                android:text="Me gusta one piece 🏴‍☠  , ️jugar ver pelis, skin care y soy web developer ✨"
+                >
+
+            </TextView>
+
+      </RelativeLayout>
+
+        <ImageView
+            android:layout_width="239dp"
+            android:layout_height="470dp"
+            android:id="@+id/photoAndroid"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/androidbrazocruzado"
+            >
+        </ImageView>
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
